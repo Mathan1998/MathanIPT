@@ -42,6 +42,8 @@ public class Day1  extends BaseClass {
 	@Test
 	private void tc3() {
 		System.out.println("Test 3");
+		
+		System.out.println("GIT HUB");
 	}
 	
 	
