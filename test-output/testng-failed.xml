@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="fruits" value="Apple"/>
+  <parameter name="food" value="dhosa"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.testng.Day333">
+        <methods>
+          <include name="endTime"/>
+          <include name="chromeClose"/>
+          <include name="chromeOpen"/>
+          <include name="startTime"/>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.testng.Day333 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
