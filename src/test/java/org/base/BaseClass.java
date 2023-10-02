@@ -24,6 +24,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -45,8 +46,12 @@ public class BaseClass {
 	// 1. Load Browser
 	public static void loadBrowser() {
 
-		WebDriverManager.chromedriver().setup();
-		d = new ChromeDriver();
+		//WebDriverManager.chromedriver().setup();
+		//d = new ChromeDriver();
+		
+		WebDriverManager.edgedriver().setup();
+		d = new EdgeDriver();
+
 	}
 
 	// 2. LaunchUrl

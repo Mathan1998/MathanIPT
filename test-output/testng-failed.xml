@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="fruits" value="Apple"/>
-  <parameter name="food" value="dhosa"/>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testng.Day333">
+      <class name="org.testng.AdactinTestNgTask">
         <methods>
-          <include name="endTime"/>
-          <include name="chromeClose"/>
-          <include name="chromeOpen"/>
-          <include name="startTime"/>
-          <include name="tc1"/>
+          <include name="finalDataHotel" invocation-numbers="0 1"/>
+          <include name="loginPage"/>
+          <include name="afterTest"/>
+          <include name="beforeclass"/>
+          <include name="beforeTest"/>
+          <include name="booking"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- org.testng.Day333 -->
+      </class> <!-- org.testng.AdactinTestNgTask -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
